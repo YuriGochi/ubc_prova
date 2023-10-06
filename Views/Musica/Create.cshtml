@@ -1,0 +1,23 @@
+﻿@model ubc.Models.Musica  
+
+<h1>Adicionar Nova Música</h1>
+
+<form asp-controller="Musica" asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Titulo">Título:</label>
+        <input type="text" class="form-control" id="Titulo" name="Titulo" placeholder="Título da Música" required>
+    </div>
+    <div class="form-group">
+        <label for="lugaresTocados">Lugares Tocados:</label>
+        <input type="number" class="form-control" id="lugaresTocados" name="lugaresTocados" placeholder="Lugares Tocados" required>
+    </div>
+    <div class="form-group">
+        <label for="Lugares">Lugares:</label>
+        <input type="text" class="form-control" id="Lugares" name="Lugares" placeholder="Lugares" required>
+    </div>
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary my-2">Adicionar</button>
+    </div>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary ">Voltar para a Lista</a>
